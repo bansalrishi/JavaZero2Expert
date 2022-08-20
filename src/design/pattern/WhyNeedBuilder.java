@@ -1,8 +1,7 @@
 package design.pattern;
 
-// Java code to demonstrate need of Builder Pattern
-
-// Server Side Code
+//Why need of Builder Pattern
+//Server Side
 final class Student {
 
     // instance fields
@@ -11,8 +10,8 @@ final class Student {
     private String address;
 
     // Setter Methods
-    // Note that all setters method
-    // return this reference
+    // Also Note that all setters method
+    // return this reference only
     public Student setId(int id)
     {
         this.id = id;
@@ -39,7 +38,7 @@ final class Student {
     }
 }
 
-// Client Side Code
+// Client Side
 class StudentReceiver {
 
     private final Student student = new Student();
@@ -74,7 +73,7 @@ class StudentReceiver {
 }
 
 // Driver class
-public class BuilderNeedDemo {
+public class WhyNeedBuilder {
     public static void main(String args[])
     {
         StudentReceiver sr = new StudentReceiver();
