@@ -63,7 +63,7 @@ public class User
             this.address = address;
             return this;
         }
-        //Return the finally consrcuted User object
+        //Return the finally constructed User object
         public User build() {
             User user =  new User(this);
             validateUserObject(user);
